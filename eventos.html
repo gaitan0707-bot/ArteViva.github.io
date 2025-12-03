@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArteViva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="imagen/logo.jpeg" alt="Logo arteviva"><h1>ArteViva</h1>
+            </a>
+            <ul class="nav-links">
+               <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="artista.html">Artistas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>EVENTOS</h1>
+        </section>
+
+        <section class="content-section container">
+            <h2>Agenda</h2>
+            <p>Calendario visual con los eventos próximos. Filtra por Talleres, Exposiciones, Ferias o Demostraciones.</p>
+
+            <table style="width:100%; border-collapse: collapse; margin-top:1rem;">
+                <thead>
+                    <tr style="background:var(--primary-color); color:var(--white-color);">
+                        <th style="padding:0.75rem; text-align:left;">Fecha</th>
+                        <th style="padding:0.75rem; text-align:left;">Evento</th>
+                        <th style="padding:0.75rem; text-align:left;">Tipo</th>
+                        <th style="padding:0.75rem; text-align:left;">Lugar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background:#fff;">
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">10-12 ago</td>
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">Feria Artesanal “Colores de mi Tierra”</td>
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">Feria</td>
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">ArteViva - Sala Principal</td>
+                    </tr>
+                    <tr style="background:#f9f9fb;">
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">25 sep</td>
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">Clase Maestra: Tembleques de Gala</td>
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">Taller</td>
+                        <td style="padding:0.6rem; border-bottom:1px solid #eee;">ArteViva - Taller 2</td>
+                    </tr>
+                    <tr style="background:#fff;">
+                        <td style="padding:0.6rem;">5 oct</td>
+                        <td style="padding:0.6rem;">Inauguración: “Raíces de Panamá”</td>
+                        <td style="padding:0.6rem;">Exposición</td>
+                        <td style="padding:0.6rem;">ArteViva</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content-section container">
+            <h2>Próximos Eventos</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Feria Artesanal “Colores de mi Tierra”</h3>
+                        <p><strong>Fecha:</strong> 10–12 de agosto<br><strong>Lugar:</strong> ArteViva – Sala Principal</p>
+                        <p>Exhibición de tembleques, molas, cutarras e indumentaria con artesanos invitados.</p>
+                        <a class="btn" href="#inscripcion" data-evento="Feria Colores de mi Tierra">INSCRIBIRME AL EVENTO</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Clase Maestra: Tembleques de Gala</h3>
+                        <p><strong>Fecha:</strong> 25 de septiembre<br><strong>Impartido por:</strong> María López</p>
+                        <p>Sesión avanzada para aprender flores de gala y técnicas de montaje profesional.</p>
+                        <a class="btn" href="#inscripcion" data-evento="Clase Maestra Tembleques">INSCRIBIRME AL EVENTO</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Inauguración: “Raíces de Panamá”</h3>
+                        <p><strong>Fecha:</strong> 5 de octubre</p>
+                        <p>Apertura oficial con recorrido guiado, demostraciones y música típica.</p>
+                        <a class="btn" href="#inscripcion" data-evento="Inauguracion Raices de Panama">INSCRIBIRME AL EVENTO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscripcion" class="content-section container">
+            <h2>Inscripción</h2>
+            <p>Rellena el formulario para inscribirte. También puedes contactarnos por WhatsApp para atención rápida.</p>
+
+            <div id="inscripcion-success" class="inscripcion-success hidden" aria-live="polite"></div>
+
+            <form id="inscripcion-form" class="inscripcion-form" action="#" method="post">
+                <div class="row-inline">
+                    <div class="form-row">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" name="correo" type="email" required>
+                    </div>
+                </div>
+
+                <div class="row-inline">
+                    <div class="form-row">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input id="whatsapp" name="whatsapp" type="tel" placeholder="+507 6XXXXXXX">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="evento">Evento</label>
+                        <input id="evento" name="evento" type="text" placeholder="Seleccione o escriba el evento">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="comentarios">Comentarios / Reserva de cupo</label>
+                    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn">Enviar inscripción</button>
+                    <a class="btn-2" href="https://wa.me/50700000000?text=Hola%20ArteViva%2C%20quiero%20informaci%C3%B3n%20sobre%20eventos" style="display:inline-block; text-decoration:none; color:#fff;">WhatsApp</a>
+                </div>
+            </form>
+        </section>
+
+        <section class="content-section container">
+            <h2>Eventos Externos</h2>
+            <div class="external-events">
+                <div class="external-card">
+                    <img src="imagen/feria_arte.jpg" alt="Feria Nacional de Artesanías">
+                    <p>Feria Nacional de Artesanías</p>
+                </div>
+
+                <div class="external-card">
+                    <img src="imagen/feria_chorera.jpg" alt="Feria Internacional de La Chorrera">
+                    <p>Feria Internacional de La Chorrera</p>
+                </div>
+
+                <div class="external-card">
+                    <img src="imagen/festival_pollera.webp" alt="Festival de la Pollera">
+                    <p>Festival de la Pollera</p>
+                </div>
+
+                <div class="external-card">
+                    <img src="imagen/defile_escolares.jpg" alt="Desfiles escolares o folclóricos">
+                    <p>Desfiles escolares o folclóricos</p>
+                </div>
+
+                <div class="external-card">
+                    <img src="imagen/exposicion_U.jpg" alt="Exposiciones en universidades o centros culturales">
+                    <p>Exposiciones en universidades y centros culturales</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <p>&copy; Este es un proyecto educativo para la valor de artesanias.</p>
+        </div>
+    </footer>
+    <script src="js/evento.js"></script>
+</body>
+</html>
