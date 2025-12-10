@@ -261,3 +261,4 @@ Proyecto educativo y cultural. Uso personal permitido.
 
 **Última actualización**: 3 de diciembre de 2025  
 **Versión**: 1.0
+
