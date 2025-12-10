@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArteViva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+            <img src="imagen/logo.jpeg" alt="Logo arteviva"><h1>ArteViva</h1>
+            </a>
+            <ul class="nav-links">
+               <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="artista.html">Artistas</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>TALLERES Y EDUCACIÓN</h1>
+        </section>
+
+        <section class="content-section container">
+            <h2>Te Invitamos a descubrir en ArteViva </h2>
+            <p>En ArteViva descubriras talleres prácticos y educativos dedicados a preservar las tradiciones artesanales panameñas. 
+                Cada curso está diseñado para que los participantes aprendan técnicas auténticas directamente de artesanos expertos, promoviendo nuestra identidad cultural.</p>
+            
+            <h2>Diferentes Talleres</h2>
+            
+            <div class="grid-layout">
+                <div class="grid-item">
+                    <img src="imagen/TEMBLEQUE 1.jpg" alt="Imagen sobre tembleques" class="grid-item-img">
+                    <h3>Saberes del Tembleque</h3>
+                    <p>Taller de Tembleques en este taller aprenderás a crear flores, ramilletes y diseños clásicos utilizando mostacillas, alambre y técnicas tradicionales.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="imagen/cutarras 2.jfif" alt="Imagen sobre cutarra" class="grid-item-img">
+                    <h3>Manos que Tejen Cutarras</h3>
+                    <p>Taller de Cutarras la cutarra es un calzado artesanal originario de la región de Azuero, elaborado tradicionalmente con cuero natural.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="imagen/indumentaria 2.jfif" alt="Imagen sobre indumentaria" class="grid-item-img">
+                    <h3>Tradición Textil Panameña</h3>
+                    <p>Taller de Indumentaria aprende las técnicas tradicionales de confección de elementos de la indumentaria panameña, como polleras, camisillas y accesorios decorativos.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="imagen/mola 2.jpg" alt="Imagen sobre Exclusión Social" class="grid-item-img">
+                    <h3>Workshop de Mola</h3>
+                    <p>Taller de Mola, la mola es una pieza textil creada por las mujeres Guna, caracterizada por capas superpuestas de tela que forman diseños inspirados en la naturaleza y la cosmovisión indígena. </p>
+                </div>
+        
+            </div>
+        </section>
+<section id="inscripcion" class="content-section container">
+            <h2>Inscripción</h2>
+            <p>Rellena el formulario para inscribirte. También puedes contactarnos por WhatsApp para atención rápida.</p>
+
+            <div id="inscripcion-success" class="inscripcion-success hidden" aria-live="polite"></div>
+
+            <form id="inscripcion-form" class="inscripcion-form" action="#" method="post">
+                <div class="row-inline">
+                    <div class="form-row">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="correo">Correo electrónico</label>
+                        <input id="correo" name="correo" type="email" required>
+                    </div>
+                </div>
+
+                <div class="row-inline">
+                    <div class="form-row">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input id="whatsapp" name="whatsapp" type="tel" placeholder="+507 6XXXXXXX">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="evento">Taller</label>
+                        <input id="evento" name="evento" type="text" placeholder="Seleccione o escriba el taller">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="comentarios">Comentarios / Reserva de cupo</label>
+                    <textarea id="comentarios" name="comentarios" rows="3"></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn">Enviar inscripción</button>
+                    <a class="btn-2" href="https://wa.me/50769266633?text=Hola%20ArteViva%2C%20quiero%20informaci%C3%B3n%20sobre%20eventos" style="display:inline-block; text-decoration:none; color:#fff;">WhatsApp</a>
+                </div>
+            </form>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <p>&copy; Este es un proyecto educativo para la valor de artesanias.</p>
+        </div>
+    </footer>
+</body>
+</html>
