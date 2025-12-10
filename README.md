@@ -107,57 +107,6 @@ Información sobre talleres disponibles (estructura disponible para expansión)
 - Estructura HTML semántica
 - Contraste adecuado de colores
 
----
-
-## 🛠️ Cómo Usar
-
-### Instalación Local
-
-1. **Descarga o clona el proyecto**:
-   ```bash
-   git clone <tu-repo>
-   cd yuli
-   ```
-
-2. **Abre en tu navegador**:
-   - Haz doble clic en `index.html` o
-   - Arrastra el archivo al navegador
-
-### Ejecutar con Servidor Local
-
-Para probar en otros dispositivos de tu red:
-
-```powershell
-python -m http.server 8000
-```
-
-Luego accede desde:
-- **PC local**: `http://localhost:8000`
-- **Otro dispositivo en la red**: `http://<TU_IP>:8000`
-
-(Encuentra tu IP ejecutando `ipconfig` y buscando "IPv4 Address")
-
----
-
-## 📱 Publicar en Internet
-
-### Opción 1: **Netlify** (Recomendado)
-1. Ve a [netlify.com](https://netlify.com)
-2. Arrastra tu carpeta `yuli`
-3. Obtén un link compartible automáticamente
-
-### Opción 2: **GitHub Pages** (Gratis)
-1. Crea repositorio en [github.com](https://github.com)
-2. Sube tus archivos
-3. Tu sitio estará en `https://tu-usuario.github.io`
-
-### Opción 3: **Vercel** (Muy rápido)
-1. Ve a [vercel.com](https://vercel.com)
-2. Conecta tu GitHub o sube la carpeta
-3. Obtén un link automáticamente
-
----
-
 ## 🎯 Paleta de Colores
 
 ```css
@@ -261,3 +210,4 @@ Proyecto educativo y cultural. Uso personal permitido.
 
 **Última actualización**: 3 de diciembre de 2025  
 **Versión**: 1.0
+
